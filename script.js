@@ -1,6 +1,6 @@
 window.onload = async function loadFAQ() {
     try {
-      const response = await fetch('faq_data.json');
+      const response = await fetch('faq-data.json');
       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
       const faqData = await response.json();
   
